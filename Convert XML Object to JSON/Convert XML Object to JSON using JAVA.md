@@ -14,13 +14,13 @@
 5.	To display the JSON object, it is converted into string and printed using System.out.println() method.
 6.	Compile the POJO using javac compiler as shown below.
 
-   ![Alt text](https://github.com/Protontech-1803/java/blob/main/Convert%20XML%20Object%20to%20JSON/img/2.png)
+      ![Alt text](https://github.com/Protontech-1803/java/blob/main/Convert%20XML%20Object%20to%20JSON/img/2.png)
 
 7.	Run the XMLtoJSONConvert Class using the below command.
 
-   ![Alt text](https://github.com/Protontech-1803/java/blob/main/Convert%20XML%20Object%20to%20JSON/img/3.png)
+      ![Alt text](https://github.com/Protontech-1803/java/blob/main/Convert%20XML%20Object%20to%20JSON/img/3.png)
 
 8.	On execution, the below JSON object will be displayed.
 
-   [Alt text](https://github.com/Protontech-1803/java/blob/main/Convert%20XML%20Object%20to%20JSON/img/4.png)
+      ![Alt text](https://github.com/Protontech-1803/java/blob/main/Convert%20XML%20Object%20to%20JSON/img/4.png)
 
