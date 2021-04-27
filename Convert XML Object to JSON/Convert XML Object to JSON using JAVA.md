@@ -1,7 +1,7 @@
 # Converting XML Object to JSON Object using Java Programming
-This POC illustrates how to convert an XML Object to JSON Object using a POJO with Java Programming. 
+**This POC illustrates how to convert an XML Object to JSON Object using a POJO with Java Programming.**
 
-The following are the steps to create a POJO for XML to JSON Conversion and executing the same.
+**The following are the steps to create a POJO for XML to JSON Conversion and executing the same.**
 
 1.	Using an IDE or any editor, create a Java Program file named “XML_to_JSON.java”.
 
