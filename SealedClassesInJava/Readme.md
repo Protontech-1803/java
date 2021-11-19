@@ -5,7 +5,9 @@ Sealed class in JAVA restricts the classes being extended by other classes, exce
 **The Following are important points to be considered when Creating and Using Sealed Classes in JAVA Programming:**
 
 •	A sealed class should be abstract and declared with sealed modifier.
+
 •	Sealed modifier cannot be used along with other modifiers like final or non-sealed.
+
 •	A sealed abstract class should be extended with permits clause.
 
 The Example in this POC, illustrates the Usage of Sealed Classes in JAVA Programming. The steps to implement the sealed classes a java program are as follows: 
@@ -20,66 +22,66 @@ The Example in this POC, illustrates the Usage of Sealed Classes in JAVA Program
 
 4.	The complete java program illustrating the usage of Sealed Class is shown below:
 
-      package com.example.Bank;
-      public class Bank 
-      {
-      public static void main(String[] args)
-       {
-      Person manager = new Manager(111, "Ram");
-      manager.name = "Ram";
-      System.out.println(getId(manager));
-      }
-      public static int getId(Person person) 
-      {
-      if (person instanceof Employee) 
-      {
-      return ((Employee) person).getEmployeeId();
-      }
-      else if (person instanceof Manager) 
-      {
-      return ((Manager) person).getManagerId();
-      }
-      return -1;
-      }
-      }
-      /* Define Sealed Class and Permits other classes to extend it */
-      abstract sealed class Person permits Employee, Manager 
-      {
-      String name;
-      String getName()
-      {
-      return name;
-      }
-      }
-      /* Class Extends the Sealed Class */
-      final class Employee extends Person
-      {
-      String name;
-      int id;
-      Employee(int id, String name)
-      {
-      this.id = id;
-      this.name = name;
-      }
-      int getEmployeeId()
-       {
-      return id;
-      }
-      }
-      /* Define Exclusively a non-sealed class */
-      non-sealed class Manager extends Person 
-      {
-      int id;
-      Manager(int id, String name)
-      {
-      this.id = id;
-      this.name = name;
-      }
-      int getManagerId()
-       {
-      return id;
-      }
-      }
+        package com.example.Bank;
+        public class Bank 
+        {
+        public static void main(String[] args)
+         {
+        Person manager = new Manager(111, "Ram");
+        manager.name = "Ram";
+        System.out.println(getId(manager));
+        }
+        public static int getId(Person person) 
+        {
+        if (person instanceof Employee) 
+        {
+        return ((Employee) person).getEmployeeId();
+        }
+        else if (person instanceof Manager) 
+        {
+        return ((Manager) person).getManagerId();
+        }
+        return -1;
+        }
+        }
+        /* Define Sealed Class and Permits other classes to extend it */
+        abstract sealed class Person permits Employee, Manager 
+        {
+        String name;
+        String getName()
+        {
+        return name;
+        }
+        }
+        /* Class Extends the Sealed Class */
+        final class Employee extends Person
+        {
+        String name;
+        int id;
+        Employee(int id, String name)
+        {
+        this.id = id;
+        this.name = name;
+        }
+        int getEmployeeId()
+         {
+        return id;
+        }
+        }
+        /* Define Exclusively a non-sealed class */
+        non-sealed class Manager extends Person 
+        {
+        int id;
+        Manager(int id, String name)
+        {
+        this.id = id;
+        this.name = name;
+        }
+        int getManagerId()
+         {
+        return id;
+        }
+        }
 
  Output: On Execution of the code, the manager Id is be displayed shown below.
  
