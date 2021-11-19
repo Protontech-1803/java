@@ -23,9 +23,9 @@ The Example in this POC, illustrates the Usage of Sealed Classes in JAVA Program
  
  
 3.	The Manager class is declared with non-sealed, other classes can extend it, without any restriction.
- 
-      ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/3.png)
- 
+
+    ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/3.png) 
+       
 
 4.	The complete java program illustrating the usage of Sealed Class is shown below:
 
