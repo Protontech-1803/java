@@ -24,7 +24,7 @@ The Example in this POC, illustrates the Usage of Sealed Classes in JAVA Program
  
 3.	The Manager class is declared with non-sealed, other classes can extend it, without any restriction.
  
-    ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/3.png)
+     ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/3.png)
  
 
 4.	The complete java program illustrating the usage of Sealed Class is shown below:
@@ -90,9 +90,9 @@ The Example in this POC, illustrates the Usage of Sealed Classes in JAVA Program
         }
         }
 
-   Output: On Execution of the code, the manager Id is be displayed shown below.
+    Output: On Execution of the code, the manager Id is be displayed shown below.
    
-   ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/4.png)
+    ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/4.png)
   
 
 5.	Further, the Below Code Snippet illustrates, that a non-permitted class cannot extend a sealed class. The Class named Security doesn’t have the permission to extend Person class as it is not Permitted.
@@ -100,9 +100,9 @@ The Example in this POC, illustrates the Usage of Sealed Classes in JAVA Program
     ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/5i.png)
   
 
-  Runtime Error: Since, the class name Security is not given permission to extend Person class and it throws an runtime error, indicating that Security class must give permission in sealed class to extend it as shown below.
+   Runtime Error: Since, the class name Security is not given permission to extend Person class and it throws an runtime error, indicating that Security class must give permission in sealed class to extend it as shown below.
   
-  ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/5ii.png)
+   ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/5ii.png)
  
 
 
