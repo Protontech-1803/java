@@ -90,7 +90,7 @@ The Example in this POC, illustrates the Usage of Sealed Classes in JAVA Program
         }
         }
 
-    Output: On Execution of the code, the manager Id is be displayed shown below.
+    **Output:** On Execution of the code, the manager Id is be displayed shown below.
    
     ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/4.png)
   
@@ -100,7 +100,7 @@ The Example in this POC, illustrates the Usage of Sealed Classes in JAVA Program
     ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/5i.png)
   
 
-    Runtime Error: Since, the class name Security is not given permission to extend Person class and it throws an runtime error, indicating that Security class must give permission in sealed class to extend it as shown below.
+    **Runtime Error:** Since, the class name Security is not given permission to extend Person class and it throws an runtime error, indicating that Security class must give permission in sealed class to extend it as shown below.
   
     ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/5ii.png)
  
