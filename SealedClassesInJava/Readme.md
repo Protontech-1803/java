@@ -24,7 +24,7 @@ The Example in this POC, illustrates the Usage of Sealed Classes in JAVA Program
  
 3.	The Manager class is declared with non-sealed, other classes can extend it, without any restriction.
  
-     ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/3.png)
+      ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/3.png)
  
 
 4.	The complete java program illustrating the usage of Sealed Class is shown below:
@@ -100,9 +100,9 @@ The Example in this POC, illustrates the Usage of Sealed Classes in JAVA Program
     ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/5i.png)
   
 
-   Runtime Error: Since, the class name Security is not given permission to extend Person class and it throws an runtime error, indicating that Security class must give permission in sealed class to extend it as shown below.
+    Runtime Error: Since, the class name Security is not given permission to extend Person class and it throws an runtime error, indicating that Security class must give permission in sealed class to extend it as shown below.
   
-   ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/5ii.png)
+    ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/5ii.png)
  
 
 
