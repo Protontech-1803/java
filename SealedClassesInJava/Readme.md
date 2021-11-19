@@ -1,4 +1,4 @@
-# Using SEALED CLASSES IN JAVA
+  # Using SEALED CLASSES IN JAVA
 
 Sealed class in JAVA restricts the classes being extended by other classes, except the permitted classes. In other words, it is more efficient to define sealed class when there is a requirement to restrict inheritance to certain class.
 
