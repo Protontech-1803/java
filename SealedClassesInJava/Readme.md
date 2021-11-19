@@ -1,6 +1,6 @@
   # Using SEALED CLASSES IN JAVA
 
-Sealed class in JAVA restricts the classes being extended by other classes, except the permitted classes. In other words, it is more efficient to define sealed class when there is a requirement to restrict inheritance to certain class.
+**Sealed** class in JAVA restricts the classes being extended by other classes, except the permitted classes. In other words, it is more efficient to define sealed class when there is a requirement to restrict inheritance to certain class.
 
 **The Following are important points to be considered when Creating and Using Sealed Classes in JAVA Programming:**
 
@@ -12,17 +12,17 @@ Sealed class in JAVA restricts the classes being extended by other classes, exce
 
 The Example in this POC, illustrates the Usage of Sealed Classes in JAVA Programming. The steps to implement the sealed classes a java program are as follows: 
 
-1.	An Abstract sealed class named Person is created which will permit the Employee and Manager class to extend it. The permits clause allows only Employee and Manager classes to extend sealed class Person.
+1.	An Abstract sealed class named **Person** is created which will permit the **Employee** and **Manager** class to extend it. The permits clause allows only **Employee** and **Manager** classes to extend sealed class Person.
 
     ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/1.png)
  
  
-2.	The Class Employee with final keyword is created, which restricts other classes extending it.
+2.	The Class **Employee** with final keyword is created, which restricts other classes extending it.
 
     ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/2.png)
  
  
-3.	The Manager class is declared with non-sealed, other classes can extend it, without any restriction.
+3.	The **Manager** class is declared with non-sealed, other classes can extend it, without any restriction.
 
     ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/3.png) 
        
@@ -32,62 +32,62 @@ The Example in this POC, illustrates the Usage of Sealed Classes in JAVA Program
         package com.example.Bank;
         public class Bank 
         {
-        public static void main(String[] args)
-         {
-        Person manager = new Manager(111, "Ram");
-        manager.name = "Ram";
-        System.out.println(getId(manager));
-        }
-        public static int getId(Person person) 
-        {
-        if (person instanceof Employee) 
-        {
-        return ((Employee) person).getEmployeeId();
-        }
-        else if (person instanceof Manager) 
-        {
-        return ((Manager) person).getManagerId();
-        }
-        return -1;
-        }
+              public static void main(String[] args)
+              {
+                  Person manager = new Manager(111, "Ram");
+                  manager.name = "Ram";
+                  System.out.println(getId(manager));
+              }
+              public static int getId(Person person) 
+              {
+                  if (person instanceof Employee) 
+                  {
+                  return ((Employee) person).getEmployeeId();
+                  }
+                  else if (person instanceof Manager) 
+                  {
+                  return ((Manager) person).getManagerId();
+                  }
+                  return -1;
+              }
         }
         /* Define Sealed Class and Permits other classes to extend it */
         abstract sealed class Person permits Employee, Manager 
         {
-        String name;
-        String getName()
-        {
-        return name;
-        }
+              String name;
+              String getName()
+              {
+              return name;
+              }
         }
         /* Class Extends the Sealed Class */
         final class Employee extends Person
         {
-        String name;
-        int id;
-        Employee(int id, String name)
-        {
-        this.id = id;
-        this.name = name;
-        }
-        int getEmployeeId()
-         {
-        return id;
-        }
+              String name;
+              int id;
+              Employee(int id, String name)
+              {
+                  this.id = id;
+                  this.name = name;
+              }
+              int getEmployeeId()
+              {
+              return id;
+              }
         }
         /* Define Exclusively a non-sealed class */
         non-sealed class Manager extends Person 
         {
-        int id;
-        Manager(int id, String name)
-        {
-        this.id = id;
-        this.name = name;
-        }
-        int getManagerId()
-         {
-        return id;
-        }
+              int id;
+              Manager(int id, String name)
+              {
+                  this.id = id;
+                  this.name = name;
+              }
+              int getManagerId()
+              {
+              return id;
+              }
         }
 
     **Output:** On Execution of the code, the manager Id is be displayed shown below.
@@ -100,7 +100,7 @@ The Example in this POC, illustrates the Usage of Sealed Classes in JAVA Program
     ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/5i.png)
   
 
-    **Runtime Error:** Since, the class name Security is not given permission to extend Person class and it throws an runtime error, indicating that Security class must give permission in sealed class to extend it as shown below.
+    **Runtime Error:** Since, the class name Security is not given permission to extend Person class and it throws an runtime error, indicating that **Security** class must give permission in sealed class to extend it as shown below.
   
     ![Alt text](https://github.com/Protontech-1803/java/blob/main/SealedClassesInJava/img/5ii.png)
  
